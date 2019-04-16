@@ -48,12 +48,17 @@ html {
 }
 
 .main-wrap {
-  max-width: 2000px;
+  max-width: 1500px;
   height: auto;
   font-family: "Roboto", sans-serif;
 }
 .main-wrap p {
   font-size: 1.5rem;
+}
+.main-wrap h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 10px 0;
 }
 .main-wrap h2 {
   font-size: 2rem;
@@ -152,6 +157,32 @@ footer {
   text-align: center;
   margin: 10px 0;
   background-color: #8AAAE5;
+}
+
+.dev-container {
+  display: flex;
+  border: 1px solid red;
+  height: 500px;
+}
+.dev-container .dev-tab-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  background-color: #8AAAE5;
+}
+.dev-container .dev-tab-list .dev-type {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.75rem;
+}
+.dev-container .dev-tab-list .dev-type div {
+  margin-bottom: 30px;
+}
+.dev-container .dev-cards {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
 }
 
 /*# sourceMappingURL=output.css.map */
