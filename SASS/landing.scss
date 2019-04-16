@@ -5,7 +5,7 @@ html {
 }
 
 .main-wrap {
-    max-width:1000px;
+    max-width:2000px;
     height:auto;
     font-family: $mainFont;
 
@@ -16,6 +16,7 @@ html {
     h2 {
         font-size:2rem;
     }
+
 }
 
 header {
@@ -57,7 +58,7 @@ header {
     }
 }
 
-.mid-banner {
+.mission-banner {
     // display:flex;
     // justify-content:space-around;
     @include flex-around;
@@ -67,8 +68,22 @@ header {
 
     @include test;
 
-    img {
-        width:80%;
+    .mission-statement {
+        width:30%;
+
+        p {
+            @include test;
+            text-align:center;
+        }
+    }
+
+    .mission-img {
+        width:60%;
+
+        img {
+            margin-left:40%;
+            @include test;
+        }
     }
 }
 
@@ -84,7 +99,7 @@ header {
         width:40%;
 
         img {
-            width:80%;
+            width:60%;
             height:auto;
         }
 
@@ -96,7 +111,7 @@ header {
         width:40%;
 
         img {
-            width:80%;
+            width:60%;
             height:auto;
         }
 

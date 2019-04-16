@@ -2,6 +2,8 @@
 $mainFont: 'Roboto', sans-serif;
 $mainColor: #8AAAE5;
 
+//Mashable's color scheme looks nice
+
 @mixin flex-around {
     display:flex;
     justify-content:space-around;
