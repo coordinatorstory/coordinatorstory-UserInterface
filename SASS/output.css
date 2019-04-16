@@ -43,6 +43,10 @@ table {
   border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -114,11 +118,12 @@ header nav a {
   text-align: center;
 }
 .mission-banner .mission-img {
-  width: 60%;
+  width: 65%;
 }
 .mission-banner .mission-img img {
-  margin-left: 40%;
   border: 1px solid red;
+  width: 95%;
+  height: 180px;
 }
 
 .main {
@@ -159,30 +164,48 @@ footer {
   background-color: #8AAAE5;
 }
 
-.dev-container {
-  display: flex;
-  border: 1px solid red;
-  height: 500px;
+.dev-type {
+  width: 100%;
 }
-.dev-container .dev-tab-list {
+.dev-type .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+.dev-type .list .title {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+.dev-type .list .type {
+  margin: 0 1%;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  border: 1px solid black;
+  padding: 1%;
+  margin-top: 10px;
+}
+.dev-type .list .type:hover {
+  background-color: #8AAAE5;
+}
+
+.developer {
+  width: 100%;
+}
+.developer .dev-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 25px 5% 25px 0;
+}
+.developer .dev-cards .dev {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 15%;
-  background-color: #8AAAE5;
-}
-.dev-container .dev-tab-list .dev-type {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.75rem;
-}
-.dev-container .dev-tab-list .dev-type div {
-  margin-bottom: 30px;
-}
-.dev-container .dev-cards {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -1,5 +1,9 @@
 // SASS File for Landing Page
 
+* {
+    box-sizing:border-box;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -84,11 +88,13 @@ header {
     }
 
     .mission-img {
-        width:60%;
+        width:65%;
 
         img {
-            margin-left:40%;
+            // margin-left:10%;
             @include test;
+            width:95%;
+            height:180px;
         }
     }
 }
@@ -132,31 +138,49 @@ footer {
 
 // About Us Page
 
-.dev-container {
-    display:flex;
-    @include test;
-    height:500px;
+.dev-type {
+    width:100%;
 
-    .dev-tab-list {
+    .list {
         display:flex;
-        flex-direction:column;
+        flex-direction:row;
         justify-content:center;
         align-items:center;
-        width:15%;
-        background-color:$mainColor;
+        @include test;
 
-        .dev-type {
+        .title {
             font-family:$mainFont;
-            font-size: 2.75rem;
-            div {
-                margin-bottom: 30px;
+            font-size:2rem;
+        }
+
+        .type {
+            margin:0 1%;
+            font-family:$mainFont;
+            font-size:2rem;
+            border:1px solid black;
+            padding:1%;
+            margin-top:10px;
+
+            &:hover {
+                background-color:$mainColor;
             }
         }
     }
+}
+
+.developer {
+    width:100%;
 
     .dev-cards {
         display:flex;
-        justify-content: space-around;
-        width:80%;
+        justify-content:center;
+        align-items:center;
+        flex-direction:row;
+        flex-wrap:wrap;
+        margin: 25px 5% 25px 0;
+
+        .dev {
+            @include flex-column;
+        }
     }
 }
