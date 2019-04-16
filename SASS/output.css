@@ -52,20 +52,22 @@ html {
 }
 
 .main-wrap {
-  max-width: 1500px;
+  max-width: 1800px;
   height: auto;
   font-family: "Roboto", sans-serif;
 }
 .main-wrap p {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 .main-wrap h1 {
   text-align: center;
   font-size: 3rem;
   margin: 10px 0;
+  border: 1px solid black;
+  padding: 1%;
 }
 .main-wrap h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 header {
@@ -160,34 +162,8 @@ header nav a {
 
 footer {
   text-align: center;
-  margin: 10px 0;
   background-color: #8AAAE5;
-}
-
-.dev-type {
-  width: 100%;
-}
-.dev-type .list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid red;
-}
-.dev-type .list .title {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-}
-.dev-type .list .type {
-  margin: 0 1%;
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  border: 1px solid black;
-  padding: 1%;
   margin-top: 10px;
-}
-.dev-type .list .type:hover {
-  background-color: #8AAAE5;
 }
 
 .developer {
@@ -206,6 +182,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px 5%;
+  background-color: #8AAAE5;
+}
+.developer .dev-cards .dev img, .developer .dev-cards .dev h2, .developer .dev-cards .dev p, .developer .dev-cards .dev a {
+  margin-top: 14px;
 }
 
 /*# sourceMappingURL=output.css.map */

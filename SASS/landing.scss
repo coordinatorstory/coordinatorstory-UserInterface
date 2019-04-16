@@ -9,22 +9,24 @@ html {
 }
 
 .main-wrap {
-    max-width:1500px;
+    max-width:1800px;
     height:auto;
     font-family: $mainFont;
 
     p {
-        font-size:1.5rem;
+        font-size:1.75rem;
     }
 
     h1 {
         text-align:center;
         font-size:3rem;
         margin:10px 0;
+        border: 1px solid black;
+        padding:1%;
     }
 
     h2 {
-        font-size:2rem;
+        font-size:2.5rem;
     }
 
 }
@@ -132,40 +134,8 @@ header {
 
 footer {
     text-align:center;
-    margin:10px 0;
     background-color:$mainColor;
-}
-
-// About Us Page
-
-.dev-type {
-    width:100%;
-
-    .list {
-        display:flex;
-        flex-direction:row;
-        justify-content:center;
-        align-items:center;
-        @include test;
-
-        .title {
-            font-family:$mainFont;
-            font-size:2rem;
-        }
-
-        .type {
-            margin:0 1%;
-            font-family:$mainFont;
-            font-size:2rem;
-            border:1px solid black;
-            padding:1%;
-            margin-top:10px;
-
-            &:hover {
-                background-color:$mainColor;
-            }
-        }
-    }
+    margin-top:10px;
 }
 
 .developer {
@@ -178,9 +148,16 @@ footer {
         flex-direction:row;
         flex-wrap:wrap;
         margin: 25px 5% 25px 0;
+        
 
         .dev {
             @include flex-column;
+            margin:10px 5%;
+            background-color:$mainColor;
+
+            img,h2,p,a {
+                margin-top:14px;
+            }
         }
     }
 }
