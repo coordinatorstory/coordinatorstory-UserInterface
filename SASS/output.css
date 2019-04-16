@@ -55,7 +55,13 @@ html {
 .main-wrap p {
   font-size: 1.5rem;
 }
+.main-wrap h2 {
+  font-size: 2rem;
+}
 
+header {
+  border: 1px solid red;
+}
 header .logoPic {
   text-align: center;
 }
@@ -83,9 +89,6 @@ header nav a {
   width: 30%;
   border: 1px solid red;
 }
-.perk .infocard h2 {
-  font-size: 1.5rem;
-}
 .perk .infocard img {
   width: 70%;
 }
@@ -96,10 +99,48 @@ header nav a {
   align-items: center;
   height: 200px;
   margin-top: 25px;
+  border: 1px solid red;
+}
+.mid-banner img {
+  width: 80%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid red;
+  height: 300px;
+  margin-top: 25px;
+}
+.main .coordinator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  width: 40%;
+}
+.main .coordinator img {
+  width: 80%;
+  height: auto;
+}
+.main .users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  width: 40%;
+}
+.main .users img {
+  width: 80%;
+  height: auto;
 }
 
 footer {
-  border: 1px solid red;
+  text-align: center;
+  margin: 10px 0;
+  background-color: #8AAAE5;
 }
 
 /*# sourceMappingURL=output.css.map */

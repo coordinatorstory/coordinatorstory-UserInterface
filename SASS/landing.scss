@@ -12,15 +12,21 @@ html {
     p {
         font-size:1.5rem;
     }
+
+    h2 {
+        font-size:2rem;
+    }
 }
 
 header {
+    @include test;
     .logoPic {
         text-align:center;
     }
     nav {
-        display:flex;
-        justify-content:space-around;
+        // display:flex;
+        // justify-content:space-around;
+        @include flex-around;
         background-color:$mainColor;
 
         a {
@@ -37,16 +43,13 @@ header {
     margin-top:25px;
 
     .infocard {
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
+        // display:flex;
+        // flex-direction:column;
+        // justify-content:center;
+        // align-items:center;
+        @include flex-column;
         width:30%;
-        border:1px solid red;
-
-        h2 {
-            font-size:1.5rem;
-        }
+        @include test;
 
         img {
             width:70%;
@@ -55,13 +58,54 @@ header {
 }
 
 .mid-banner {
-    display:flex;
-    justify-content:space-around;
+    // display:flex;
+    // justify-content:space-around;
+    @include flex-around;
     align-items:center;
     height:200px;
     margin-top:25px;
+
+    @include test;
+
+    img {
+        width:80%;
+    }
+}
+
+.main {
+    @include flex-around;
+    @include test;
+    height:300px;
+    margin-top:25px;
+
+    .coordinator {
+        @include flex-column;
+        @include test;
+        width:40%;
+
+        img {
+            width:80%;
+            height:auto;
+        }
+
+    }
+
+    .users {
+        @include flex-column;
+        @include test;
+        width:40%;
+
+        img {
+            width:80%;
+            height:auto;
+        }
+
+    }
 }
 
 footer {
-    border:1px solid red;
-};
+    text-align:center;
+    margin:10px 0;
+    background-color:$mainColor;
+}
+
