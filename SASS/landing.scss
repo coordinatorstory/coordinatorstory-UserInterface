@@ -1,0 +1,67 @@
+// SASS File for Landing Page
+
+html {
+    font-size: 62.5%;
+}
+
+.main-wrap {
+    max-width:1000px;
+    height:auto;
+    font-family: $mainFont;
+
+    p {
+        font-size:1.5rem;
+    }
+}
+
+header {
+    .logoPic {
+        text-align:center;
+    }
+    nav {
+        display:flex;
+        justify-content:space-around;
+        background-color:$mainColor;
+
+        a {
+            text-decoration:none;
+            font-size:2rem;
+            color:black;
+        }
+    }
+}
+
+.perk {
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:25px;
+
+    .infocard {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:30%;
+        border:1px solid red;
+
+        h2 {
+            font-size:1.5rem;
+        }
+
+        img {
+            width:70%;
+        }
+    }
+}
+
+.mid-banner {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:200px;
+    margin-top:25px;
+}
+
+footer {
+    border:1px solid red;
+};
