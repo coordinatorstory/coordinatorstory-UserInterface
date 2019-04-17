@@ -1,4 +1,6 @@
 // SASS File for Landing Page
+// Topography bg https://www.toptal.com/designers/subtlepatterns/page/9/
+// Made by: Shankar Ganesh 
 
 * {
     box-sizing:border-box;
@@ -10,8 +12,9 @@ html {
 }
 
 .main-wrap {
-    max-width:1800px;
+    max-width:2222px;
     height:auto;
+    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/topography.png);
 
     p {
         font-size:2rem;
@@ -20,7 +23,7 @@ html {
     h1 {
         text-align:center;
         font-size:3rem;
-        margin:10px 20%;
+        margin:10px 30%;
         padding:1%;
         border-bottom:1px solid black;
         
@@ -29,7 +32,6 @@ html {
     h2 {
         font-size:2.75rem;
     }
-
 }
 
 header {
@@ -40,7 +42,7 @@ header {
         @include flex-around;
         align-items:center;
         background-color:$mainColor;
-        height:40px;
+        height:30px;
 
         a {
             text-decoration:none;
@@ -104,7 +106,7 @@ header {
     @include flex-around;
     @include test;
     height:300px;
-    margin:50px;
+    margin:50px 5% 0 5%;
 
     .coordinator {
         @include flex-column;
@@ -132,10 +134,11 @@ header {
 }
 
 footer {
-    text-align:center;
-    background-color:$mainColor;
-    margin-top:10px;
-    height:30px;
+    // text-align:center;
+    // background-color:$mainColor;
+    // margin-top:10px;
+    // height:30px;
+    @include flex-column;
 }
 
 .developer {
@@ -147,7 +150,7 @@ footer {
         align-items:center;
         flex-direction:row;
         flex-wrap:wrap;
-        margin: 25px 5% 25px 0;
+        margin: 25px 5% 0 5%;
         
 
         .dev {

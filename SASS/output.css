@@ -53,8 +53,9 @@ html {
 }
 
 .main-wrap {
-  max-width: 1800px;
+  max-width: 2222px;
   height: auto;
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/topography.png);
 }
 .main-wrap p {
   font-size: 2rem;
@@ -62,7 +63,7 @@ html {
 .main-wrap h1 {
   text-align: center;
   font-size: 3rem;
-  margin: 10px 20%;
+  margin: 10px 30%;
   padding: 1%;
   border-bottom: 1px solid black;
 }
@@ -78,7 +79,7 @@ header nav {
   justify-content: space-around;
   align-items: center;
   background-color: #8AAAE5;
-  height: 40px;
+  height: 30px;
 }
 header nav a {
   text-decoration: none;
@@ -136,7 +137,7 @@ header nav a {
   justify-content: space-around;
   border: 1px solid red;
   height: 300px;
-  margin: 50px;
+  margin: 50px 5% 0 5%;
 }
 .main .coordinator {
   display: flex;
@@ -164,10 +165,10 @@ header nav a {
 }
 
 footer {
-  text-align: center;
-  background-color: #8AAAE5;
-  margin-top: 10px;
-  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .developer {
@@ -179,7 +180,7 @@ footer {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 25px 5% 25px 0;
+  margin: 25px 5% 0 5%;
 }
 .developer .dev-cards .dev {
   display: flex;
