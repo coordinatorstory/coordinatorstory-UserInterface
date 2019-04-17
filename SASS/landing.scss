@@ -15,10 +15,10 @@ html {
 .main-wrap {
     max-width:2222px;
     height:auto;
-    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/topography.png);
+    // background: url(https://www.toptal.com/designers/subtlepatterns/patterns/topography.png);
 
     p {
-        font-size:2rem;
+        font-size:2.25rem;
     }
 
     h1 {
@@ -33,13 +33,14 @@ html {
     h2 {
         font-size:2.75rem;
         text-align:center;
+        padding:1%;
     }
 
     ul {
         list-style-type: square;
 
         li {
-            font-size:2rem;
+            font-size:2.25rem;
             padding:2%;
         }
     }
@@ -56,6 +57,7 @@ html {
 }
 
 header {
+    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/topography.png);
     .logoPic {
         text-align:center;
     }
@@ -63,13 +65,12 @@ header {
         @include flex-around;
         align-items:center;
         background-color:$mainColor;
-        height:35px;
+        height:40px;
 
         a {
             text-decoration:none;
-            font-size:2rem;
             color:white;
-            font-size:2.5rem;
+            font-size:2.85rem;
         }
     }
 }
@@ -81,11 +82,18 @@ header {
 
     .infocard {
         @include flex-column;
-        width:30%;
+        background-color:$mainColor;
+        width:32%;
         // @include test;
 
         img {
-            width:65%;
+            width:95%;
+            margin:2% 0;
+        }
+
+        p {
+            width:90%;
+            padding:1.5%;
         }
     }
 }
@@ -134,9 +142,10 @@ header {
     }
 
     .coordinator {
+        border:10px solid $mainColor;
         // @include test;
         width:49%;
-        border:1px solid black;
+        // border:1px solid black;
 
         .cd-info {
             @include flex-around;
@@ -160,10 +169,14 @@ header {
         }
     }
 
+    // users and coordinates share styles and can be combined.
+    // Separation to accomodate types of pictures.
+
     .users {
+        border:10px solid $mainColor;
         // @include test;
         width:49%;
-        border:1px solid black;
+        // border:1px solid black;
        
 
         .user-info {
@@ -191,6 +204,7 @@ header {
 
 
 footer {
+    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/topography.png);
     @include flex-column;
 }
 
