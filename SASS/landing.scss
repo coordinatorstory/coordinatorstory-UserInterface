@@ -1,6 +1,7 @@
 // SASS File for Landing Page
 // Topography bg https://www.toptal.com/designers/subtlepatterns/page/9/
 // Made by: Shankar Ganesh 
+// OurStory Logo created by www.freelogodesign.org
 
 * {
     box-sizing:border-box;
@@ -31,6 +32,26 @@ html {
 
     h2 {
         font-size:2.75rem;
+        text-align:center;
+    }
+
+    ul {
+        list-style-type: square;
+
+        li {
+            font-size:2rem;
+            padding:2%;
+        }
+    }
+
+    button {
+        font-size:2rem;
+        padding:1%;
+        border-radius:10px;
+        background-color:white;
+        margin-top:20px;
+        margin-left:20%;
+        width:60%;
     }
 }
 
@@ -42,12 +63,12 @@ header {
         @include flex-around;
         align-items:center;
         background-color:$mainColor;
-        height:30px;
+        height:35px;
 
         a {
             text-decoration:none;
             font-size:2rem;
-            color:black;
+            color:white;
             font-size:2.5rem;
         }
     }
@@ -61,7 +82,7 @@ header {
     .infocard {
         @include flex-column;
         width:30%;
-        @include test;
+        // @include test;
 
         img {
             width:65%;
@@ -76,13 +97,13 @@ header {
     height:300px;
     margin:50px;
 
-    @include test;
+    // @include test;
 
     .mission-statement {
         width:40%;
 
         p {
-            @include test;
+            // @include test;
             margin-left:30%;
             font-size:4rem;
             font-style:italic;
@@ -94,7 +115,7 @@ header {
         width:60%;
 
         img {
-            @include test;
+            // @include test;
             width:85%;
             height:275px;
             margin-left:10%;
@@ -104,40 +125,72 @@ header {
 
 .main {
     @include flex-around;
-    @include test;
-    height:300px;
-    margin:50px 5% 0 5%;
+    // @include test;
+    height:500px;
+    margin:50px 2% 0 2%;
+
+    .main-title {
+        margin:2% 0;
+    }
 
     .coordinator {
-        @include flex-column;
-        @include test;
-        width:40%;
+        // @include test;
+        width:49%;
+        border:1px solid black;
 
-        img {
-            width:60%;
-            height:auto;
+        .cd-info {
+            @include flex-around;
+
+            .cd-img {
+                width:50%;
+
+                img {
+                    width:100%;
+                    height:70%;
+                }
+            }
+            
+            .cd-perk {
+                display:flex;
+                flex-direction:column;
+                width:40%;
+                margin:10% 0;
+                
+            }
         }
-
     }
 
     .users {
-        @include flex-column;
-        @include test;
-        width:40%;
+        // @include test;
+        width:49%;
+        border:1px solid black;
+       
 
-        img {
-            width:60%;
-            height:auto;
+        .user-info {
+            @include flex-around;
+
+            .user-img {
+                width:50%;
+
+                img {
+                    width:100%;
+                    height:70%;
+                }
+            }
+
+        .user-perk {
+            // @include flex-column;
+            display:flex;
+            flex-direction:column;
+            width:40%;
+            margin:10% 0;
         }
-
-    }
+     }
+   }
 }
 
+
 footer {
-    // text-align:center;
-    // background-color:$mainColor;
-    // margin-top:10px;
-    // height:30px;
     @include flex-column;
 }
 
