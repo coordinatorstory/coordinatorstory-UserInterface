@@ -5,7 +5,7 @@ let links = document.querySelectorAll('a');
 console.log(links);
 links.forEach(function(links){
     links.addEventListener("mouseover",function(links){
-        links.target.style.color = "gold";
+        links.target.style.color = "black";
     });
 });
 links.forEach(function(links){
