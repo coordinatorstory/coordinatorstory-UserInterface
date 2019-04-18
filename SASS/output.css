@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-wrap {
+  max-width: 2560px;
+  height: auto;
+}
+@media (max-width: 1000px) {
+  .main-wrap {
+    max-width: 1000px;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .main-wrap {
+    max-width: 600px;
+    height: auto;
+  }
+}
+@media (max-width: 300px) {
+  .main-wrap {
+    max-height: 300px;
+    height: auto;
+  }
+}
+.main-wrap p {
+  font-size: 2.25rem;
+}
+.main-wrap h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 10px 30%;
+  padding: 1%;
+  border-bottom: 1px solid black;
+}
+.main-wrap h2 {
+  font-size: 2.75rem;
+  text-align: center;
+  padding: 1%;
+}
+.main-wrap ul {
+  list-style-type: square;
+}
+.main-wrap ul li {
+  font-size: 2rem;
+  padding: 2%;
+}
+.main-wrap button {
+  font-size: 1.5rem;
+  padding: 0.5%;
+  border-radius: 5px;
+  background-color: #8AAAE5;
+  color: white;
+  margin-top: 20px;
+  margin-left: 20%;
+  width: 45%;
+}
+
+header {
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/topography.png);
+}
+header .logoPic {
+  text-align: center;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #8AAAE5;
+  height: 40px;
+}
+@media (max-width: 300px) {
+  header nav {
+    height: 125px;
+    flex-direction: column;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.85rem;
+}
+
+.perk {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+@media (max-width: 600px) {
+  .perk {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+}
+.perk .infocard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #8AAAE5;
+  width: 32%;
+}
+@media (max-width: 600px) {
+  .perk .infocard {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 20px;
+  }
+}
+.perk .infocard img {
+  width: 95%;
+  margin: 2% 0;
+}
+.perk .infocard p {
+  width: 90%;
+  padding: 1.5%;
+}
+
+.mission-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  margin: 40px 2%;
+}
+@media (max-width: 600px) {
+  .mission-banner {
+    height: 200px;
+  }
+}
+.mission-banner .mission-statement {
+  width: 40%;
+}
+@media (max-width: 600px) {
+  .mission-banner .mission-statement {
+    width: 95%;
+  }
+}
+.mission-banner .mission-statement p {
+  margin-left: 15%;
+  font-size: 4rem;
+  font-style: italic;
+}
+@media (max-width: 300px) {
+  .mission-banner .mission-statement p {
+    font-size: 2.5rem;
+  }
+}
+.mission-banner .mission-img {
+  width: 60%;
+}
+@media (max-width: 600px) {
+  .mission-banner .mission-img {
+    display: none;
+  }
+}
+.mission-banner .mission-img img {
+  width: 85%;
+  height: 275px;
+  margin-left: 10%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  height: 450px;
+  margin: 50px 2% 0 2%;
+}
+@media (max-width: 1000px) {
+  .main {
+    height: 550px;
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    height: 1125px;
+    flex-direction: column;
+  }
+}
+.main .main-title {
+  margin: 2% 0;
+}
+.main .coordinator, .main .users {
+  border: 10px solid #8AAAE5;
+  width: 49%;
+}
+@media (max-width: 600px) {
+  .main .coordinator, .main .users {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+}
+.main .coordinator .cd-info, .main .users .cd-info {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 1000px) {
+  .main .coordinator .cd-info, .main .users .cd-info {
+    flex-direction: column;
+  }
+}
+.main .coordinator .cd-info .cd-img, .main .users .cd-info .cd-img {
+  width: 50%;
+}
+@media (max-width: 1000px) {
+  .main .coordinator .cd-info .cd-img, .main .users .cd-info .cd-img {
+    width: 95%;
+    margin-left: 2%;
+  }
+}
+.main .coordinator .cd-info .cd-img img, .main .users .cd-info .cd-img img {
+  width: 100%;
+  height: 326px;
+}
+@media (max-width: 1000px) {
+  .main .coordinator .cd-info .cd-img img, .main .users .cd-info .cd-img img {
+    height: 300px;
+  }
+}
+.main .coordinator .cd-info .cd-perk, .main .users .cd-info .cd-perk {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 10% 0;
+}
+@media (max-width: 1000px) {
+  .main .coordinator .cd-info .cd-perk, .main .users .cd-info .cd-perk {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 10%;
+  }
+}
+
+footer {
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/topography.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.developer {
+  width: 100%;
+}
+.developer .dev-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 25px 5% 0 5%;
+}
+.developer .dev-cards .dev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 5%;
+  background-color: #8AAAE5;
+}
+.developer .dev-cards .dev img, .developer .dev-cards .dev h2, .developer .dev-cards .dev p, .developer .dev-cards .dev a {
+  margin-top: 14px;
+}
+
+/*# sourceMappingURL=output.css.map */

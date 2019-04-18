@@ -1,0 +1,24 @@
+//Variables
+$mainFont: 'Roboto', sans-serif;
+$mainColor: #8AAAE5;
+$query1000: 'max-width:1000';
+$query800: 'max-width:800';
+$query500: 'max-width:500';
+
+//Mashable's color scheme looks nice
+
+@mixin flex-around {
+    display:flex;
+    justify-content:space-around;
+}
+
+@mixin flex-column {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+}
+
+@mixin test {
+    border:1px solid red;
+}
