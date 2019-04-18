@@ -53,8 +53,26 @@ html {
 }
 
 .main-wrap {
-  max-width: 2222px;
+  max-width: 2560px;
   height: auto;
+}
+@media (max-width: 1000px) {
+  .main-wrap {
+    max-width: 1000px;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .main-wrap {
+    max-width: 600px;
+    height: auto;
+  }
+}
+@media (max-width: 300px) {
+  .main-wrap {
+    max-height: 300px;
+    height: auto;
+  }
 }
 .main-wrap p {
   font-size: 2.25rem;
@@ -75,17 +93,17 @@ html {
   list-style-type: square;
 }
 .main-wrap ul li {
-  font-size: 2.25rem;
+  font-size: 2rem;
   padding: 2%;
 }
 .main-wrap button {
-  font-size: 2rem;
-  padding: 1%;
-  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 0.5%;
+  border-radius: 5px;
   background-color: white;
   margin-top: 20px;
   margin-left: 20%;
-  width: 60%;
+  width: 45%;
 }
 
 header {
@@ -101,6 +119,12 @@ header nav {
   background-color: #8AAAE5;
   height: 40px;
 }
+@media (max-width: 300px) {
+  header nav {
+    height: 125px;
+    flex-direction: column;
+  }
+}
 header nav a {
   text-decoration: none;
   color: white;
@@ -112,6 +136,12 @@ header nav a {
   justify-content: space-evenly;
   margin: 50px 0;
 }
+@media (max-width: 600px) {
+  .perk {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+}
 .perk .infocard {
   display: flex;
   flex-direction: column;
@@ -119,6 +149,13 @@ header nav a {
   align-items: center;
   background-color: #8AAAE5;
   width: 32%;
+}
+@media (max-width: 600px) {
+  .perk .infocard {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 20px;
+  }
 }
 .perk .infocard img {
   width: 95%;
@@ -134,18 +171,38 @@ header nav a {
   justify-content: space-between;
   align-items: center;
   height: 300px;
-  margin: 50px;
+  margin: 40px 2%;
+}
+@media (max-width: 600px) {
+  .mission-banner {
+    height: 200px;
+  }
 }
 .mission-banner .mission-statement {
   width: 40%;
 }
+@media (max-width: 600px) {
+  .mission-banner .mission-statement {
+    width: 95%;
+  }
+}
 .mission-banner .mission-statement p {
-  margin-left: 30%;
+  margin-left: 15%;
   font-size: 4rem;
   font-style: italic;
 }
+@media (max-width: 300px) {
+  .mission-banner .mission-statement p {
+    font-size: 2.5rem;
+  }
+}
 .mission-banner .mission-img {
   width: 60%;
+}
+@media (max-width: 600px) {
+  .mission-banner .mission-img {
+    display: none;
+  }
 }
 .mission-banner .mission-img img {
   width: 85%;
@@ -156,53 +213,72 @@ header nav a {
 .main {
   display: flex;
   justify-content: space-around;
-  height: 500px;
+  height: 450px;
   margin: 50px 2% 0 2%;
+}
+@media (max-width: 1000px) {
+  .main {
+    height: 550px;
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    height: 1125px;
+    flex-direction: column;
+  }
 }
 .main .main-title {
   margin: 2% 0;
 }
-.main .coordinator {
+.main .coordinator, .main .users {
   border: 10px solid #8AAAE5;
   width: 49%;
 }
-.main .coordinator .cd-info {
+@media (max-width: 600px) {
+  .main .coordinator, .main .users {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+}
+.main .coordinator .cd-info, .main .users .cd-info {
   display: flex;
   justify-content: space-around;
 }
-.main .coordinator .cd-info .cd-img {
+@media (max-width: 1000px) {
+  .main .coordinator .cd-info, .main .users .cd-info {
+    flex-direction: column;
+  }
+}
+.main .coordinator .cd-info .cd-img, .main .users .cd-info .cd-img {
   width: 50%;
 }
-.main .coordinator .cd-info .cd-img img {
-  width: 100%;
-  height: 70%;
+@media (max-width: 1000px) {
+  .main .coordinator .cd-info .cd-img, .main .users .cd-info .cd-img {
+    width: 95%;
+    margin-left: 2%;
+  }
 }
-.main .coordinator .cd-info .cd-perk {
+.main .coordinator .cd-info .cd-img img, .main .users .cd-info .cd-img img {
+  width: 100%;
+  height: 326px;
+}
+@media (max-width: 1000px) {
+  .main .coordinator .cd-info .cd-img img, .main .users .cd-info .cd-img img {
+    height: 300px;
+  }
+}
+.main .coordinator .cd-info .cd-perk, .main .users .cd-info .cd-perk {
   display: flex;
   flex-direction: column;
   width: 40%;
   margin: 10% 0;
 }
-.main .users {
-  border: 10px solid #8AAAE5;
-  width: 49%;
-}
-.main .users .user-info {
-  display: flex;
-  justify-content: space-around;
-}
-.main .users .user-info .user-img {
-  width: 50%;
-}
-.main .users .user-info .user-img img {
-  width: 100%;
-  height: 70%;
-}
-.main .users .user-info .user-perk {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  margin: 10% 0;
+@media (max-width: 1000px) {
+  .main .coordinator .cd-info .cd-perk, .main .users .cd-info .cd-perk {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 10%;
+  }
 }
 
 footer {
